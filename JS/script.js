@@ -1,5 +1,5 @@
 // Cambiar imágenes automáticamente
-const images = ["MEDIA/IMG1.jpg", "MEDIA/img2.jpg", "MEDIA/img3.jpg"]; // Lista de imágenes
+const images = ["MEDIA/img1.jpg", "MEDIA/img2.jpg", "MEDIA/img3.jpg"]; // Lista de imágenes
 let currentIndex = 0;
 const slider = document.getElementById("slider");
 
