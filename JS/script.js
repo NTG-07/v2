@@ -9,7 +9,7 @@ function changeImage() {
   setTimeout(() => {
     slider.src = images[currentIndex];
     slider.style.opacity = 1; 
-  }, 500); // Tiempo de transición
+  }, 500); 
 }
 setInterval(changeImage, 3000); 
 
@@ -28,12 +28,12 @@ const tableContainer = document.querySelector(".table-container");
 let scrollPosition = 0;
 
 function autoScrollTable() {
-  scrollPosition += 1; // Incrementa el scroll
+  scrollPosition += 1; 
   tableContainer.scrollTop = scrollPosition;
 
   if (scrollPosition >= tableContainer.scrollHeight - tableContainer.clientHeight) {
-    scrollPosition = 0; // Reinicia el scroll cuando llega al final
+    scrollPosition = 0; 
   }
 }
-setInterval(autoScrollTable, 50); // Velocidad del scroll
+setInterval(autoScrollTable, 50); 
 
