@@ -1,19 +1,19 @@
-// Cambiar imágenes automáticamente
-const images = ["MEDIA/img1.jpg", "MEDIA/img2.jpg", "MEDIA/img3.jpg"]; // Lista de imágenes
+
+const images = ["MEDIA/img1.jpg", "MEDIA/img2.jpg", "MEDIA/img3.jpg"]; 
 let currentIndex = 0;
 const slider = document.getElementById("slider");
 
 function changeImage() {
-  currentIndex = (currentIndex + 1) % images.length; // Ciclar entre las imágenes
-  slider.style.opacity = 0; // Desvanece la imagen actual
+  currentIndex = (currentIndex + 1) % images.length; 
+  slider.style.opacity = 0; 
   setTimeout(() => {
     slider.src = images[currentIndex];
-    slider.style.opacity = 1; // Muestra la nueva imagen
+    slider.style.opacity = 1; 
   }, 500); // Tiempo de transición
 }
-setInterval(changeImage, 3000); // Cambia cada 3 segundos
+setInterval(changeImage, 3000); 
 
-// Mostrar fecha y hora actual
+
 function updateDateTime() {
   const now = new Date();
   const date = now.toLocaleDateString();
@@ -23,7 +23,7 @@ function updateDateTime() {
 }
 setInterval(updateDateTime, 1000);
 
-// Auto-scroll en la tabla de programación
+
 const tableContainer = document.querySelector(".table-container");
 let scrollPosition = 0;
 
